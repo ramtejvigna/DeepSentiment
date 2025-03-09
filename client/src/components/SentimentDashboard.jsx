@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
 
 // API base URL - adjust this based on your deployment
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://deepsentiment.onrender.com';
 
 const SentimentDashboard = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
