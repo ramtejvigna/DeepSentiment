@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
 
 // API base URL - adjust this based on your deployment
-const API_BASE_URL = 'https://deepsentiment.onrender.com';
+const API_BASE_URL = 'http://localhost:8000';
 
 const SentimentDashboard = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -182,7 +182,7 @@ const SentimentDashboard = () => {
                 exit={{ opacity: 0 }}
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
             >
-                <motion.div
+                {/* <motion.div
                     className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg ${isDarkMode ? 'border border-gray-700' : ''}`}
                     whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
                     transition={{ duration: 0.2 }}
@@ -344,7 +344,7 @@ const SentimentDashboard = () => {
                             Refresh Stats
                         </motion.button>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
                 {recentAnalyses.length > 0 && (
                     <motion.div

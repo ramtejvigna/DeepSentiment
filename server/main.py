@@ -16,7 +16,7 @@ app = FastAPI(title="Sentiment Analysis API")
 # Add CORS middleware to allow cross-origin requests from the React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://deep-sentiment.vercel.app"],  # For production, specify your frontend domain
+    allow_origins=["*"],  # For production, specify your frontend domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
