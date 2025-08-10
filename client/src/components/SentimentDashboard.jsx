@@ -182,7 +182,7 @@ const SentimentDashboard = () => {
                 exit={{ opacity: 0 }}
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
             >
-                {/* <motion.div
+                <motion.div
                     className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg ${isDarkMode ? 'border border-gray-700' : ''}`}
                     whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
                     transition={{ duration: 0.2 }}
@@ -344,7 +344,7 @@ const SentimentDashboard = () => {
                             Refresh Stats
                         </motion.button>
                     </div>
-                </motion.div> */}
+                </motion.div>
 
                 {recentAnalyses.length > 0 && (
                     <motion.div
@@ -542,7 +542,7 @@ const SentimentDashboard = () => {
             
             {/* Main content */}
             <div className="flex-grow overflow-auto">
-                <div className={`p-6 h-full ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-100'}`}>
+                <div className={`p-6 h-full bg-gray-900 text-white`}>
                     {activeTab === 'dashboard' && <DashboardContent />}
                     {activeTab === 'text' && 
                         (
